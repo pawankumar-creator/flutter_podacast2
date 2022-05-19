@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_podacast/screens/home_page.dart';
+import 'package:flutter_podacast/screens/bnb.dart';
 
 void main() {
   runApp(const PoadcastApp());
@@ -12,7 +12,7 @@ class PoadcastApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "Podcast App",
-      home: HomePage(),
+      home: BNB(),
       debugShowCheckedModeBanner: false,
     );
   }

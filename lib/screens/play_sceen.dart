@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_podacast/widgets/play/play_podcast_detail.dart';
+import 'package:flutter_podacast/widgets/play/play_icons_tab.dart';
+
+import '../widgets/play/play_music.dart';
 
 class PlayScreen extends StatelessWidget {
   final Map<String, dynamic> model;
@@ -39,9 +42,11 @@ class PlayScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
-            PlayPodcastDetail(
-              model: model,
-            ),
+            PlayPodcastDetail(model: model),
+            const SizedBox(height: 20),
+            PlayIconsTab(),
+            const SizedBox(height: 20),
+            PlayMusic()
           ],
         ),
       ),
